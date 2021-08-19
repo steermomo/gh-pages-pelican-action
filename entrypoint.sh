@@ -8,6 +8,9 @@ echo "ACTOR: $GITHUB_ACTOR"
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 remote_branch=${GH_PAGES_BRANCH:=gh-pages}
 
+echo 'List all files'
+ls
+
 echo 'Installing Python Requirements 🐍 '
 pip install -r requirements.txt
 
